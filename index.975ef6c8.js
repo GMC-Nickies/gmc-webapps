@@ -2944,8 +2944,7 @@ var _pokerHandGenDefault = parcelHelpers.interopDefault(_pokerHandGen);
 var _evensOrOdds = require("./projects/evens-or-odds");
 var _evensOrOddsDefault = parcelHelpers.interopDefault(_evensOrOdds);
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
-    history: (0, _history.createBrowserHistory)(),
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.HashRouter), {
     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Routes), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
