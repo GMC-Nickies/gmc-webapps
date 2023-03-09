@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./components/App";
 import './index.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Header from './components/Header';
 import MusicMaster from './projects/music-master';
@@ -11,14 +11,14 @@ import EvensOrOdds from './projects/evens-or-odds';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter basename={"https://GMC-Nickies.github.io/gmc-webapps"} history={createBrowserHistory()}>
+  <HashRouter>
     <Routes>
       <Route path='/' element={<Header><App /></Header>} />
       <Route path='/music-master' element={<Header><MusicMaster /></Header>} />
       <Route path='/poker-hands' element={<Header><PokerHandGen /></Header>} />
       <Route path='/evens-or-odds' element={<Header><EvensOrOdds /></Header>} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 
